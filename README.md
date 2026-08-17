@@ -62,6 +62,6 @@ System Administrator | Cloud & Infrastructure Specialist
 
 GitHub: @MHRmehedi2
 
-LinkedIn: [[Md Mehedi Hasan Rabbe](https://www.linkedin.com/in/md-mehedi-hasan-rabbe-79a69b213/)]
+LinkedIn: [https://www.linkedin.com/in/md-mehedi-hasan-rabbe-79a69b213/]
 
 Email: mehedi106191@gmail.com
