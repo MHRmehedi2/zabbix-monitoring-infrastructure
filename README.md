@@ -1,50 +1,47 @@
-# 🚀 Enterprise Zabbix Monitoring Server Setup
+# 🚀 Zabbix Enterprise Infrastructure Monitoring Server
 
-A robust, real-time enterprise monitoring setup built on **Ubuntu Linux** integrated with **MySQL** for persistent metric storage and high-performance indexing.
+A comprehensive, real-time enterprise monitoring environment setup using **Zabbix 7.0 LTS** on **Ubuntu Linux**, integrated with **MySQL** for robust metric logging and database management.
 
 ---
 
 ## 📌 Project Overview
-This project demonstrates the implementation of a full-fledged Network Operations Center (NOC) monitoring environment using **Zabbix 7.0 / 6.4 LTS**. It tracks infrastructure health across endpoints, provides real-time traffic visualization, and automates incident detection.
-
-## 🛠️ Tech Stack & Architecture
-- **OS:** Ubuntu 22.04 / 24.04 LTS
-- **Monitoring Platform:** Zabbix Server & Zabbix Frontend
-- **Database:** MySQL / MariaDB (Optimized with custom indexing)
-- **Web Server:** Nginx / Apache
-- **Target Hosts:** Linux, Windows Servers, Network Switches/Routers
+This project demonstrates the complete deployment and configuration of an automated Network Operations Center (NOC) monitoring server. It provides continuous tracking of network endpoints, server infrastructure metrics, and automated alert notifications to ensure minimal downtime.
 
 ---
 
-## 🔥 Key Features & Capabilities
-
-### 1. Core Infrastructure Setup
-- Deployed Zabbix Server with MySQL backend for persistent metric retention.
-- Configured database partitioning and housekeeping for efficient storage management.
-
-### 2. Real-Time Metric & Host Tracking
-- **System Health:** Real-time tracking of CPU, RAM, Disk I/O, and SWAP usage.
-- **Network Metrics:** Latency (ICMP Ping), Packet Loss, Interface Throughput, and Bandwidth utilization.
-- **Service Availability:** HTTP/HTTPS, SSH, MySQL, Active Directory, and DNS monitoring.
-
-### 3. Proactive Alerting & Incident Management
-- Customized **Zabbix Triggers** with strict severity thresholds (Information ➔ High ➔ Disaster).
-- Integrated automated notification channels (Email / Telegram / Webhook) for immediate alert dispatching.
-
-### 4. Custom NOC Visual Dashboards
-- Designed custom NOC-style dashboards for real-time traffic visualization.
-- Built-in map overlays and graphs for rapid **Root Cause Analysis (RCA)** during outages.
+## 🛠️ Infrastructure & Tech Stack
+- **Operating System:** Ubuntu 22.04 LTS
+- **Monitoring Platform:** Zabbix Server & Frontend (PHP)
+- **Database Backend:** MySQL / MariaDB (Optimized for metric history & trend storage)
+- **Web Server:** Apache2 / Nginx
+- **Monitored Services:** Linux/Windows Hosts, Ping (ICMP), HTTP/HTTPS, System Resources (CPU/RAM/Disk)
 
 ---
 
-## 🖼️ Dashboard Preview
-![Zabbix Dashboard](screenshots/dashboard.png)
-*(Note: Upload a screenshot of your Zabbix dashboard into a `screenshots/` folder in your repo)*
+## 🔥 Key Technical Highlights
+
+### 1. Server Deployment & Database Initialization
+- Installed Zabbix Server with MySQL engine and configured dedicated database schemas.
+- Configured Zabbix Agent on Linux and Windows endpoints for active and passive data gathering.
+
+### 2. Metric Collection & Triggers
+- Real-time resource monitoring (CPU load, RAM consumption, Disk I/O, Network Throughput).
+- Configured proactive **Zabbix Triggers** with customizable severity levels (Warning, Average, High, Disaster).
+
+### 3. NOC Visualizations & Dashboards
+- Designed custom visual dashboards displaying real-time server health and network topology.
+- Generated historical trend graphs and root cause analysis (RCA) views for quick incident response.
 
 ---
 
-## 🚀 Quick Setup / Installation Summary
+## 🚀 Quick Installation Guide
 
-1. **Update System & Install Dependencies**
-   ```bash
-   sudo apt update && sudo apt upgrade -y
+### 1. Repository Setup & Package Installation
+```bash
+# Download and install Zabbix repository
+wget [https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_ubuntu22.04_all.deb](https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_ubuntu22.04_all.deb)
+sudo dpkg -i zabbix-release_latest_ubuntu22.04_all.deb
+sudo apt update
+
+# Install Zabbix server, frontend, and agent
+sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent -y
