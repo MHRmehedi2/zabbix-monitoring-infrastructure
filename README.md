@@ -46,6 +46,10 @@ sudo apt update
 # Install Zabbix server, frontend, and agent
 sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent -y
 
+2. Database Configuration
+SQL
+
+
 CREATE DATABASE zabbix CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'your_secure_password';
 GRANT ALL PRIVILEGES ON zabbix.* TO 'zabbix'@'localhost';
