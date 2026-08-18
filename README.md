@@ -60,12 +60,20 @@ FLUSH PRIVILEGES;
 ## 📊 System Dashboards & Visualizations
 
 **Monitoring Dashboards:**
-![Dashboard Overview 1](Dashboard_1.png)
-![Dashboard Overview 2](Dashboard_2.png)
+<img src="https://raw.githubusercontent.com/MHRmehedi2/zabbix-monitoring-infrastructure/main/Dashboard_1.png" width="100%">
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/MHRmehedi2/zabbix-monitoring-infrastructure/main/Dashboard_2.png" width="100%">
+
+<br><br>
 
 **Monitored Hosts & Configuration:**
-![Host Setup 1](host_1.png)
-![Host Setup 2](host_2.png)
+<img src="https://raw.githubusercontent.com/MHRmehedi2/zabbix-monitoring-infrastructure/main/host_1.png" width="100%">
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/MHRmehedi2/zabbix-monitoring-infrastructure/main/host_2.png" width="100%">
 
 ---
 
