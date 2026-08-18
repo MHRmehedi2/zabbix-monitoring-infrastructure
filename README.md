@@ -55,6 +55,20 @@ CREATE USER 'zabbix'@'localhost' IDENTIFIED BY 'your_secure_password';
 GRANT ALL PRIVILEGES ON zabbix.* TO 'zabbix'@'localhost';
 FLUSH PRIVILEGES;
 
+---
+
+## 📊 System Dashboards & Visualizations
+
+**Monitoring Dashboards:**
+![Dashboard Overview 1](Dashboard_1.png)
+![Dashboard Overview 2](Dashboard_2.png)
+
+**Monitored Hosts & Configuration:**
+![Host Setup 1](host_1.png)
+![Host Setup 2](host_2.png)
+
+---
+
 👤 Author
 Md Mehedi Hasan Rabbe
 
