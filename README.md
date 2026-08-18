@@ -60,16 +60,10 @@ FLUSH PRIVILEGES;
 ## 📊 System Dashboards & Visualizations
 
 **Monitoring Dashboards:**
-
-<img width="1919" height="877" alt="Dashboard_2" src="https://github.com/user-attachments/assets/cbf80895-706f-4e0f-b643-7506c7f07e2e" />
-<img width="1919" height="879" alt="Dashboard_1" src="https://github.com/user-attachments/assets/9c593a35-6858-45df-b47d-b761d1372f73" />
-
-
-**Monitored Hosts & Configuration:**
-
-<img width="1582" height="837" alt="host_2" src="https://github.com/user-attachments/assets/f7651813-02f1-4544-95db-d8e9e83fb0e6" />
-<img width="1585" height="834" alt="host_1" src="https://github.com/user-attachments/assets/95766878-8be1-42e7-a08b-7c6f84ffc8a8" />
-
+<img width="1919" height="879" alt="Image" src="https://github.com/user-attachments/assets/b2af3c74-9812-4c7e-9ae3-bfa409789544" />
+<img width="1919" height="877" alt="Image" src="https://github.com/user-attachments/assets/1b1e81b3-1716-4d46-8bbd-585970175baa" />
+<img width="1585" height="834" alt="Image" src="https://github.com/user-attachments/assets/dabfd445-a4b5-4a96-a5db-0f659667e9fd" />
+<img width="1582" height="837" alt="Image" src="https://github.com/user-attachments/assets/2b10659c-b3dd-45e1-b8a9-74079a04a06b" />
 
 ---
 
